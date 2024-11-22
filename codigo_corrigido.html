@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Curso Exclusivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2b2b2b, #6c63ff);
+            color: #fff;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        .text {
+            flex: 1 1 100%;
+            margin-bottom: 20px;
+            text-align: center;
+            animation: fadeInLeft 2s ease;
+        }
+
+        .image {
+            flex: 1 1 100%;
+            text-align: center;
+            animation: fadeInRight 2s ease;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (min-width: 1000px) {
+            .text, .image {
+                flex: 1;
+            }
+        }
+
+        .imagem2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .imagem2 img {
+            width: 300px; /* Tamanho reduzido */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center; /* Centraliza os cards */
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            background: linear-gradient(135deg, #b87cf8, #020222);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            font-style: italic;
+            color: #fff;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .price-section {
+            text-align: center;
+            margin: 20px auto;
+            animation: fadeInUp 2s ease;
+            font-size: larger;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px 10px 0;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn-parcelado {
+            background-color: #514bcf;
+            color: #fff;
+        }
+
+        .btn-parcelado:hover {
+            background-color: #3f39b5;
+        }
+
+        .btn-vista {
+            background-color: #ff6f61;
+            color: #fff;
+            font-size: xx-large;
+        }
+
+        .btn-vista:hover {
+            background-color: #d55c50;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="text" data-aos="fade-right">
+            <h1><strong>Quem é Cassia Adriana</strong></h1>
+            <p>
+               <h3> Trabalho com Leilões há mais de 20 anos e ganho a vida desse jeito. Vou mostrar tudo o que você precisa saber.
+                Quero que você também possa fazer isso e ter liberdade financeira no mundo dos Leilões.
+                Por isso, lancei minha mentoria 12.0, a melhor do mercado, com uma qualidade e preço jamais vistos.</h3>
+            </p>
+        </div>
+        <div class="image" data-aos="fade-up">
+            <img src="primeiraimg.png" alt="Cassia Adriana">
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h2>Mais de 70 imóveis arrematados por mim ao longo de minha carreira</h2>
+        </div>
+
+        <div class="card">
+            <h2>Atuando a mais de 22 anos no mercado de Leilões Imobiliário </h2>
+        </div>
+
+        <div class="card">
+            <h2>Oportunidades que começam em 5% do valor do Imovel</h2>
+        </div>
+    </div>
+
+    <div class="imagem2">
+        <img src="segundaimg.png" alt="Cassia Adriana">
+    </div>
+
+   <div class="price-section" data-aos="fade-up">
+    <h1>Adquira Nosso Curso Exclusivo</h1>
+    <p><h1>Aprenda com a melhor do Mercado e com o melhor preço</h1><strong><h1>R$ 12x de 120,00</h1></strong> ou <strong>R$ 1.200,00 a vista</strong>.</p>
+    <button class="btn btn-vista" onclick="location.href='https://wa.me/19996403420?text=Olá%2C%20gostaria%20de%20adquirir%20o%20curso%20exclusivo!'"">
+        Adquirir Agora
+    </button>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>                                                                                                                                                                                                                                                                                                                    
+        AOS.init();
+    </script>
+</body>
+</html>
